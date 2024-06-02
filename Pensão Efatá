@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bem-vindos ao site da Pensão Efatá</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      :root {
+        --default-font-family: 'Anton', Impact, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      .main-container {
+        overflow: hidden;
+      }
+
+      .main-container,
+      .main-container * {
+        box-sizing: border-box;
+      }
+
+      input,
+      select,
+      textarea,
+      button {
+        outline: 0;
+      }
+
+      .main-container {
+        position: relative;
+        width: 100%;
+        max-width: 1231px;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+
+      .inicio {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+
+      .imagem-logo {
+        position: relative;
+        width: 100%;
+        max-width: 952px;
+        height: 331px;
+        margin: 0 auto;
+        background: url(https://i.ibb.co/p0JRPCc/Pens-o-Efat-Logo-Black.png) no-repeat center;
+        background-size: contain;
+        z-index: 8;
+        overflow: hidden;
+        border-radius: 20px 12px 12px 12px;
+      }
+
+      .boas-vindas {
+        display: block;
+        position: relative;
+        height: 105px;
+        margin: 70px auto;
+        color: #f4b30f;
+        font-family: var(--default-font-family);
+        font-size: 55px;
+        font-weight: 900;
+        line-height: 105px;
+        text-align: center;
+        white-space: nowrap;
+        z-index: 7;
+        -webkit-text-stroke: 0.9px #000000;
+      }
+
+      .cardapio-realizar-pedido {
+        display: block;
+        position: relative;
+        height: 60px;
+        margin: 30px auto;
+        color: #f4b30f;
+        font-family: var(--default-font-family);
+        font-size: 35px;
+        font-weight: 900;
+        line-height: 60px;
+        text-align: center;
+        white-space: nowrap;
+        z-index: 6;
+        -webkit-text-stroke: 0.9px #000000;
+      }
+
+      .cardapio-realizar-pedido a {
+        color: inherit;
+        text-decoration: underline;
+        -webkit-text-stroke-width: 0.0px;
+        text-stroke-width: 0.0px;
+      }
+
+      .flex-row-cd {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: auto;
+        z-index: 5;
+        margin: 30px auto;
+      }
+
+      .prato {
+        flex: 1 1 45%;
+        max-width: 421px;
+        height: 404px;
+        margin: 10px;
+        background: url(https://i.ibb.co/Vx8sbM5/Prato-1.png) no-repeat center;
+        background-size: contain;
+        z-index: 5;
+        overflow: hidden;
+        border-radius: 20px 12px 12px 12px;
+      }
+
+      .prato-1 {
+        flex: 1 1 45%;
+        max-width: 503px;
+        height: 452px;
+        margin: 10px;
+        background: url(https://i.ibb.co/nCq8NSP/Prato-4.png) no-repeat center;
+        background-size: contain;
+        z-index: 4;
+        overflow: hidden;
+        border-radius: 20px 12px 12px 12px;
+      }
+
+      .boa-refeicao {
+        display: block;
+        position: relative;
+        height: 105px;
+        margin: 30px auto;
+        color: #f4b30f;
+        font-family: var(--default-font-family);
+        font-size: 55px;
+        font-weight: 900;
+        line-height: 105px;
+        text-align: center;
+        white-space: nowrap;
+        z-index: 3;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        -webkit-text-stroke: 0.9px #000000;
+      }
+
+      .endereco {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 30px auto;
+        color: #f7b40d;
+        font-family: var(--default-font-family);
+        font-size: 35px;
+        font-weight: 900;
+        line-height: 76.5px;
+        text-align: center;
+        z-index: 2;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        -webkit-text-stroke: 0.9px #000000;
+      }
+
+      .image-start {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        background: url(https://i.ibb.co/1dTLF6d/Imagem-de-fundo-novo.jpg) no-repeat center;
+        background-size: cover;
+        transform: translate(-50%, 0);
+        opacity: 0.9;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="inicio">
+        <div class="imagem-logo"></div>
+        <span class="boas-vindas">Sejam bem-vindos!</span>
+        <span class="cardapio-realizar-pedido">
+          Realize seu pedido, <a href="https://forms.gle/81jqtryYcjuhpwzA8">clique aqui</a>.
+        </span>
+        <div class="flex-row-cd">
+          <div class="prato"></div>
+          <div class="prato-1"></div>
+          <span class="boa-refeicao">Boa refeição!</span>
+        </div>
+        <span class="endereco">
+          Rua Mauá Nº3 Loja B<br />São Bernardo, Belford Roxo - RJ
+        </span>
+        <div class="image-start"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
